@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+ 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static './css/todo.css' %}" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Get TODO list task -->
+
+      <!-- CSS GRID -->
+      <div class="grid">
+        <div class="left"></div>
+        <div class="center mt-xl-3">
+          <div>
+            <input
+              class="inputarea"
+              type="text"
+              placeholder="Enter future task"
+            />
+            <button class="btn btn-primary">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!-- Display TO-DO List  -->
+          <!-- {% comment %} {% for  in  %} {% endcomment %} -->
+          <div class="task mt-xl-3 mt-sm-5">
+            <label for=""></label>
+            <div class="donebox">
+              <i class="fa fa-trash"></i>
+              <!-- <input class="done" type="checkbox" name="done" id=""> -->
+            </div>
+          </div>
+          <!-- {% comment %} {% endfor %} {% endcomment %} -->
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>

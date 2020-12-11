@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(1, 1, 29);
+}
+.inputarea{
+    border-radius: 5px;
+    width: 350px;
+    height:40px;
+}
+.task{
+    background-color: whitesmoke;
+    width: 500px;
+    min-height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.1);
+}
+label{
+    max-width: 400px;
+}
+.done{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    width: 30px;
+    padding: 5px 5px 5px 5px;
+    
+
+}
+.donebox{
+    margin-left: 90%;
+    position: relative;
+    top: 50%;
+    /* border: 1px solid black; */
+    height: inherit;
+    margin-top: 0;
+   
+}
+.row-body{
+    min-height: 100h;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+ .center{
+    
+    /* border: 1px solid black; */
+    column-gap: 1px;
+}
+.left, .right{
+    /* background-color: white; */
+    /* width: 90%; */
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* column-gap: 1px; */
+}
+
+
+@media only screen and (max-width:768px){
+    body{opacity:1
+    }
+
+    .inputarea{
+        width: 70%;
+    }
+    .task{
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .grid{
+    
+    grid-template-columns: 1fr 10fr;
+    
+}
+ .center{
+    
+    /* border: 1px solid black; */
+    column-gap: 1px;
+}
+.left, .right{
+    /* background-color: white; */
+    /* width: 90%; */
+    
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* column-gap: 1px; */
+}
+}
